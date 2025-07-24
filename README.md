@@ -1,9 +1,8 @@
 # Hand Horn Technique
 This is a printable practice sheet for horn players being introduced to hand horn technique.
 On two pages, it includes an explanation of the history and mechanics of hand horn,
-a hand position chart,
-and several scale and arpeggio exercises.
-it assumes basic knowledge of the harmonic series
+a hand position chart and several scale and arpeggio exercises.
+It assumes basic knowledge of the harmonic series
 and hand stopping.
 
 Suggestions? Feedback? Let me know by creating an issue ticket [here](https://github.com/claysmalley/hand-horn-technique/issues/new).
