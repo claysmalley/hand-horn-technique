@@ -224,7 +224,7 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
       \vspace #-1.5
       \mostlystopped
     }
-    \small \italic { mostly stopped }
+    \small \italic { echo (mostly stopped) }
   }
   \line {
     \center-column {
