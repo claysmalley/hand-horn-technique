@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.24.1"
 
 #(set-default-paper-size "letter")
 
@@ -8,7 +8,7 @@ date = #(strftime "%Y–%m–%d" (localtime (current-time)))
   copyright = \markup \concat {
     \italic "CC0, no rights reserved · last updated "
     \italic \date
-    " · github.com/claysmalley/horn-fingering-dict"
+    " · github.com/claysmalley/hand-horn-technique"
   }
   title = "Hand Horn Technique"
   composer = \markup \italic "Clay Smalley"
@@ -103,30 +103,6 @@ tuningSharpFive = \markup
   \sharp
   ".05"
 }
-tuningSharpTen = \markup
-\bold
-\abs-fontsize #9
-\concat {
-  \super
-  \sharp
-  ".10"
-}
-tuningSharpFifteen = \markup
-\bold
-\abs-fontsize #9
-\concat {
-  \super
-  \sharp
-  ".15"
-}
-tuningSharpTwenty = \markup
-\bold
-\abs-fontsize #9
-\concat {
-  \super
-  \sharp
-  ".20"
-}
 tuningSharpForty = \markup
 \bold
 \abs-fontsize #9
@@ -134,14 +110,6 @@ tuningSharpForty = \markup
   \super
   \sharp
   ".40"
-}
-tuningFlatFive = \markup
-\bold
-\abs-fontsize #9
-\concat {
-  \super
-  \flat
-  ".05"
 }
 tuningFlatTen = \markup
 \bold
@@ -158,14 +126,6 @@ tuningFlatFifteen = \markup
   \super
   \flat
   ".15"
-}
-tuningFlatTwenty = \markup
-\bold
-\abs-fontsize #9
-\concat {
-  \super
-  \flat
-  ".20"
 }
 tuningFlatThirty = \markup
 \bold
@@ -187,7 +147,7 @@ tuningFlatFifty = \markup
 reallyopen = \markup {
   \combine
   \abs-fontsize #12 \musicglyph "scripts.open"
-  \abs-fontsize #16 \musicglyph "scripts.flageolet"
+  \abs-fontsize #22 \musicglyph "scripts.flageolet"
 }
 moreopen = \markup {
   \combine
