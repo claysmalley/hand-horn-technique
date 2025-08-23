@@ -456,38 +456,44 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
     }
   }
   \new Staff
-  \relative c'' {
+  \relative c' {
     \accidentalStyle Score.modern
 
     \clef treble
-    \time 4/4
+    \time 3/4
     \tempo 4 = 76 - 176
-    \centermarkup g4\mp^\fullopen
+    \centermarkup e4\mp^\moreopen
+    \centermarkup f4^\fullstopped
+    \centermarkup fis4^\mostlystopped |
+    \centermarkup g4^\fullopen
     \centermarkup aes4^\fullstopped
-    \centermarkup a4^\halfstopped
-    \centermarkup bes4^\reallyopen |
+    \centermarkup a4^\halfstopped |
+    \centermarkup bes4^\reallyopen
     \centermarkup b4^\mostlystopped
-    \centermarkup c4^\fullopen
+    \centermarkup c4^\fullopen |
     \centermarkup cis4^\mostlystopped
-    \centermarkup d4^\fullopen |
-    \centermarkup ees4^\halfstopped
+    \centermarkup d4^\fullopen
+    \centermarkup ees4^\halfstopped |
     \centermarkup e4^\moreopen
     \centermarkup f4^\halfstopped
     fis4 |
     \centermarkup g4^\fullopen
     fis4
-    f4
-    e4 |
+    f4 |
+    e4
     ees4
-    d4
+    d4 |
     cis4
-    c4 |
-    b4
+    c4
+    b4 |
     bes4
     a4
     aes4 |
-    g1
-    R1
+    g4
+    fis4
+    f4 |
+    e2.
+    R2.
     \bar ":|."
   }
 }
