@@ -33,7 +33,8 @@ centermarkup = {
      (ly:self-alignment-interface::x-aligned-on-self g)))
 }
 
-fingerT = \markup \abs-fontsize #6 \bold T
+fingerT = \markup \abs-fontsize #8 \musicglyph "arrowheads.open.11"
+fingerL = \markup \abs-fontsize #8 \musicglyph "arrowheads.open.1M1"
 fingerO = \markup \abs-fontsize #6 \slashed-digit #0
 fingerB = \markup \abs-fontsize #6 \finger 2
 fingerA = \markup \abs-fontsize #6 \finger 1
@@ -43,52 +44,94 @@ fingerAC = \markup \abs-fontsize #6 \finger 13
 fingerABC = \markup \abs-fontsize #6 \finger 123
 fingerTO = \markup
 \override #`(direction . ,UP)
-\override #'(baseline-skip . 1.4)
+\override #'(baseline-skip . 2.0)
 \dir-column {
   \general-align #X #CENTER \fingerO
   \general-align #X #CENTER \fingerT
 }
 fingerTB = \markup
 \override #`(direction . ,UP)
-\override #'(baseline-skip . 1.4)
+\override #'(baseline-skip . 2.0)
 \dir-column {
   \general-align #X #CENTER \fingerB
   \general-align #X #CENTER \fingerT
 }
 fingerTA = \markup
 \override #`(direction . ,UP)
-\override #'(baseline-skip . 1.4)
+\override #'(baseline-skip . 2.0)
 \dir-column {
   \general-align #X #CENTER \fingerA
   \general-align #X #CENTER \fingerT
 }
 fingerTAB = \markup
 \override #`(direction . ,UP)
-\override #'(baseline-skip . 1.4)
+\override #'(baseline-skip . 2.0)
 \dir-column {
   \general-align #X #CENTER \fingerAB
   \general-align #X #CENTER \fingerT
 }
 fingerTBC = \markup
 \override #`(direction . ,UP)
-\override #'(baseline-skip . 1.4)
+\override #'(baseline-skip . 2.0)
 \dir-column {
   \general-align #X #CENTER \fingerBC
   \general-align #X #CENTER \fingerT
 }
 fingerTAC = \markup
 \override #`(direction . ,UP)
-\override #'(baseline-skip . 1.4)
+\override #'(baseline-skip . 2.0)
 \dir-column {
   \general-align #X #CENTER \fingerAC
   \general-align #X #CENTER \fingerT
 }
 fingerTABC = \markup
 \override #`(direction . ,UP)
-\override #'(baseline-skip . 1.4)
+\override #'(baseline-skip . 2.0)
 \dir-column {
   \general-align #X #CENTER \fingerABC
   \general-align #X #CENTER \fingerT
+}
+fingerLO = \markup
+\override #'(baseline-skip . 0.9)
+\column {
+  \general-align #X #CENTER \fingerO
+  \general-align #X #CENTER \fingerL
+}
+fingerLB = \markup
+\override #'(baseline-skip . 0.9)
+\column {
+  \general-align #X #CENTER \fingerB
+  \general-align #X #CENTER \fingerL
+}
+fingerLA = \markup
+\override #'(baseline-skip . 0.9)
+\column {
+  \general-align #X #CENTER \fingerA
+  \general-align #X #CENTER \fingerL
+}
+fingerLAB = \markup
+\override #'(baseline-skip . 0.9)
+\column {
+  \general-align #X #CENTER \fingerAB
+  \general-align #X #CENTER \fingerL
+}
+fingerLBC = \markup
+\override #'(baseline-skip . 0.9)
+\column {
+  \general-align #X #CENTER \fingerBC
+  \general-align #X #CENTER \fingerL
+}
+fingerLAC = \markup
+\override #'(baseline-skip . 0.9)
+\column {
+  \general-align #X #CENTER \fingerAC
+  \general-align #X #CENTER \fingerL
+}
+fingerLABC = \markup
+\override #'(baseline-skip . 0.9)
+\column {
+  \general-align #X #CENTER \fingerABC
+  \general-align #X #CENTER \fingerL
 }
 
 tuningZero = \markup
@@ -395,11 +438,11 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
     piece = \markup \concat { \box { 1 } " Hand Horn Chromatic Scale" }
     subpiece = \markup \wordwrap {
       Repeat this exercise in
-      \bold F \concat { \fingerO "," } 
-      \bold E \concat { \fingerB "," } 
-      \bold \concat { "E" \super \flat } \concat { \fingerA "," }
-      \bold D \fingerAB and
-      \bold C \concat { \fingerAC "," } 
+      \bold F \concat { \fingerLO "," } 
+      \bold E \concat { \fingerLB "," } 
+      \bold \concat { "E" \super \flat } \concat { \fingerLA "," }
+      \bold D \fingerLAB and
+      \bold C \concat { \fingerLAC "," } 
       then
       \bold G \concat { \fingerTAB "," } 
       \bold A \fingerTB and
@@ -454,11 +497,11 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
 \markup \large \bold \italic "Hand Horn Scales and Arpeggios in the Middle Register"
 \markup \small \wordwrap {
   Repeat these exercises in
-  \bold F \concat { \fingerO "," } 
-  \bold E \concat { \fingerB "," } 
-  \bold \concat { "E" \super \flat } \concat { \fingerA "," }
-  \bold D \fingerAB and
-  \bold C \concat { \fingerAC "," } 
+  \bold F \concat { \fingerLO "," } 
+  \bold E \concat { \fingerLB "," } 
+  \bold \concat { "E" \super \flat } \concat { \fingerLA "," }
+  \bold D \fingerLAB and
+  \bold C \concat { \fingerLAC "," } 
   then
   \bold G \concat { \fingerTAB "," } 
   \bold A \fingerTB and
@@ -671,11 +714,11 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
 \markup \large \bold \italic "Hand Horn Scales and Arpeggios in the High Register"
 \markup \small \wordwrap {
   Repeat these exercises in
-  \bold F \concat { \fingerO "," } 
-  \bold E \concat { \fingerB "," } 
-  \bold \concat { "E" \super \flat } \concat { \fingerA "," }
-  \bold D \fingerAB and
-  \bold C \concat { \fingerAC "." } 
+  \bold F \concat { \fingerLO "," } 
+  \bold E \concat { \fingerLB "," } 
+  \bold \concat { "E" \super \flat } \concat { \fingerLA "," }
+  \bold D \fingerLAB and
+  \bold C \concat { \fingerLAC "." } 
 }
 \markup \null
 \score {
