@@ -298,8 +298,8 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
   }
   \null
   \wordwrap {
-    The harmonic series, as playable on natural horn,
-    is as follows.
+    The harmonic series as playable on natural horn is shown here,
+    starting on C and ascending chromatically.
     Partial numbers are listed to the right of each pitch,
     and deviation from the written pitch (in twelve–tone equal temperament) is shown below, rounded to the nearest 5 cents.
   }
@@ -316,7 +316,7 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
   <<
     \new Staff
     \new Voice = "harmonicSeries"
-    \relative c {
+    \relative c''' {
       \accidentalStyle Score.forget
       \set Score.timing = ##f
       \omit Staff.TimeSignature
@@ -326,29 +326,29 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
       \override Fingering.whiteout-style = #'rounded-box
 
       \clef treble
-      <c-2 c'-4 c'-8 c'-16>2*2
+      <c-16 c,-8 c,-4 c,-2>2*2
       \bar "|"
-      <cis'''-17>2*2
+      <cis-17>2*2
       \bar "|"
-      <d,-9 d'-18>2*2
+      <d-18 d,-9>2*2
       \bar "|"
-      <ees'-19>2*2
+      <ees-19>2*2
       \bar "|"
-      <e,,-5 e'-10 e'-20>2*2
+      <e-20 e,-10 e,-5>2*2
       \bar "|"
-      s1
+      \parenthesize \xNote f,4*4
       \bar "|"
-      <fis'-11>2*2
+      <fis-11>2*2
       \bar "|"
-      <g,,-3 g'-6 g'-12>2*2
+      <g-12 g,-6 g,-3>2*2
       \bar "|"
-      <aes''-13>2*2
+      <aes-13>2*2
       \bar "|"
-      s1
+      \parenthesize \xNote a4*4
       \bar "|"
-      <bes,-7 bes'-14>2*2
+      <bes-14 bes,-7>2*2
       \bar "|"
-      <b'-15>2*2
+      <b-15>2*2
     }
     \new Lyrics = "tuning"
     \context Lyrics = "tuning" {
@@ -359,9 +359,11 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
         \tuningSharpFive
         \tuningZero
         \tuningFlatFifteen
+        " "
         \tuningFlatFifty
         \tuningZero
         \tuningSharpForty
+        " "
         \tuningFlatThirty
         \tuningFlatTen
       }
