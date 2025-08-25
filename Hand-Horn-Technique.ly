@@ -27,6 +27,7 @@ date = #(strftime "%Y–%m–%d" (localtime (current-time)))
 }
 
 centermarkup = {
+  \once \override TextScript.staff-padding = #2
   \once \override TextScript.self-alignment-X = #CENTER
   \once \override TextScript.X-offset = #(lambda (g)
   (+ (ly:self-alignment-interface::centered-on-x-parent g)
@@ -193,9 +194,7 @@ reallyopen = \markup {
   \abs-fontsize #22 \musicglyph "scripts.flageolet"
 }
 moreopen = \markup {
-  \combine
-  \abs-fontsize #10 \musicglyph "ties.lyric.short"
-  \general-align #Y #-0.4 \abs-fontsize #12 \musicglyph "scripts.open"
+  \overtie \abs-fontsize #12 \musicglyph "scripts.open"
 }
 fullopen = \markup {
   \abs-fontsize #12 \musicglyph "scripts.open"
