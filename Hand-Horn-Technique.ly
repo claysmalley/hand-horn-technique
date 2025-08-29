@@ -284,7 +284,6 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
   Every horn and hand is different, but an \italic open position should produce the most desirable horn sound,
   and a \italic { fully stopped } position should seal off as much of the bell as possible.
   The \italic { extra open } position might necessitate removing the hand from the bell entirely.
-  Positions for high \concat { F \super \sharp } and A are left blank in the exercises that follow—choose what works for you.
 }
 \markup \null
 \stoppingGuide
@@ -385,7 +384,7 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
     \centermarkup ees4^\halfstopped |
     \centermarkup e4^\moreopen
     \centermarkup f4^\halfstopped
-    fis4 |
+    \centermarkup fis4^\reallyopen^\mostlystopped |
     \centermarkup g4^\fullopen
     fis4
     f4 |
@@ -444,7 +443,7 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
     \centermarkup c4^\fullopen
     \centermarkup d4^\fullopen
     \centermarkup e4^\moreopen
-    fis4 |
+    \centermarkup fis4^\reallyopen^\mostlystopped |
     \centermarkup g2^\fullopen
     fis4
     e4 |
@@ -655,7 +654,7 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
     \centermarkup e4^\moreopen |
     \centermarkup f4^\halfstopped
     \centermarkup g4^\fullopen
-    a4
+    \centermarkup a4^\reallyopen^\halfstopped
     \centermarkup b4^\moreopen |
     \centermarkup c2^\fullopen
     b4
@@ -695,7 +694,7 @@ stoppingGuide = \markup \override #'(padding . 5) \table #'(0 0 0 0 0 0) {
     \centermarkup ees4^\halfstopped
     \centermarkup f4^\halfstopped
     \centermarkup g4^\fullopen
-    a4 |
+    \centermarkup a4^\reallyopen^\halfstopped |
     \centermarkup bes2^\reallyopen
     a4
     g4
