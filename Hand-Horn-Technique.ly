@@ -34,10 +34,10 @@ centermarkup = {
      (ly:self-alignment-interface::x-aligned-on-self g)))
 }
 
-fingerTO = \markup \overtie \abs-fontsize #6 \slashed-digit #0
+fingerTO = \markup \overtie \abs-fontsize #6 \concat { " " \slashed-digit #0 " " }
 fingerTB = \markup \overtie \abs-fontsize #6 \finger " 2 "
 fingerTAB = \markup \overtie \abs-fontsize #6 \finger 12
-fingerLO = \markup \undertie \abs-fontsize #6 \slashed-digit #0
+fingerLO = \markup \undertie \abs-fontsize #6 \concat { " " \slashed-digit #0 " " }
 fingerLB = \markup \undertie \abs-fontsize #6 \finger " 2 "
 fingerLA = \markup \undertie \abs-fontsize #6 \finger " 1 "
 fingerLAB = \markup \undertie \abs-fontsize #6 \finger 12
